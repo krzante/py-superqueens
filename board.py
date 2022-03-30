@@ -70,9 +70,10 @@ def is_attacking(i1, j1, i2, j2):
         i1, j1 (int): the coordinates of the first queen.
         i2, j2 (int): the coordinates of the second queen.
     """
-    return (i1 == i2 or                   # Same row
-            j1 == j2 or                   # Same column
-            abs(i1 - i2) == abs(j1 - j2)) # Same diagonal
+    return (i1 == i2 or                     # Same row
+            j1 == j2 or                     # Same column
+            abs(i1 - i2) == abs(j1 - j2) or # Same diagonal
+            (abs(i1 - i2) + abs(j1 - j2) == 3)) # CHECKING KNIGHT MOVE
 
 def number_of_conflicts(board):
     """Returns the number of queens attacking each other from a board.
