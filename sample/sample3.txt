@@ -1,0 +1,46 @@
+CS 4200 Project 2
+n-queens solver
+----------------
+Type in the dimension of the board, or 0 to exit:
+10
+
+Generated 10x10 board:
+- - - - - - - - - -
+- - - - X - - - X -
+- X - X - - - - - -
+- - - - - - X - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - X
+- - X - - - - X - -
+X - - - - - - - - -
+- - - - - X - - - -
+Number of conflicts = 11
+
+Hill Climbing Solution:
+- - - - - - X - - -
+- - - - - - - - - X
+- - - X - - - - - -
+- X - - - - - - - -
+- - - - - - - - X -
+- - X - - - - - - -
+- - - - - X - - - -
+- - - - - - - X - -
+X - - - - - - - - -
+- - - - X - - - - -
+Number of conflicts = 0
+Successful: YES
+
+Simulated Annealing Solution:
+X - - - - - - - - -
+- - - - X - - - - -
+- - - - - - X - - -
+- - - - - - - - - X
+- - - X - - - - - -
+- X - - - - - - - -
+- - - - - - - - X -
+- - X - - - - - - -
+- - - - - X - - - -
+- - - - - - - X - -
+Number of conflicts = 0
+Successful: YES
